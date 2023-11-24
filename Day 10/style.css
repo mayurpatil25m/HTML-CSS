@@ -1,0 +1,28 @@
+body{
+    background-color: aqua;
+    color: brown;
+    text-align: center;
+}
+
+/* Index.html*/
+
+h1{
+    text-align: center;
+}
+
+
+#password{
+    margin-top: 1%;
+}
+
+#idloginbutton{
+    margin-top: 1%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+/*Login.html*/
+
+h2{
+    text-align: center;
+}
