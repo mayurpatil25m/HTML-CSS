@@ -1,14 +1,15 @@
-function validate (){
+function validate() {
+    
     u = document.getElementById("user").value
     p = document.getElementById("password").value
 
-    if(u=="jbk" && p=="123"){
+    if (u == "jbk" && p == "123") {
 
         window.location.href = "Login.html"
 
-    }else{
+    } else {
 
-        document.getElementById("errormsg").innerText= "Invalid Username or Passowrd"
+        document.querySelector('#errormsg').innerText = "Invalid Username or Passowrd"
 
     }
 }
