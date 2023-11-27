@@ -12,16 +12,18 @@
 
     <h1>Day 10</h1>
     <p>
-    <form action="Login.html">
+    <form id="loginForm">
         <label id="uname">Username:</label>
         <input type="text" id="user"><br>
 
         <label id="p">Password:</label>
         <input type="password" id="password"><br>
 
-        <button type="submit" id="idloginbutton">Login</button>
+        <button type="button" onclick="validate()" id="idloginbutton">Login</button>
     </form>
     </p>
+
+    <p id="errormsg"></p>
 
 </body>
 <script src="script.js"></script>
