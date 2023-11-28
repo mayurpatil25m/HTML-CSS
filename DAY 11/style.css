@@ -5,3 +5,8 @@ body {
 h1 {
     text-align: center;
 }
+
+#day{
+    font-size: 50px;
+    color: brown;
+}

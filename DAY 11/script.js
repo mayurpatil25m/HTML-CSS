@@ -20,18 +20,24 @@
 
 
 console.log("Switch Case")
-day = "Wednesday"
 
 
-switch (day) {
-    case "Monday": console.log("Monday"); break;
-    case "Tuesday": console.log("Tuesday"); break;
-    case "Wednesday": console.log("Wednesday"); break;
-    case "Thursdayday": console.log("Thursday"); break;
-    case "Friday": console.log("Friday"); break;
-    case "Saturday": console.log("Saturday"); break;
-    case "Sunday": console.log("Sunday"); break;
-    default: console.log("Entered the correct choice");
+day = prompt()
+
+let result = day.toLowerCase();
+
+
+
+
+switch (result) {
+    case "monday": document.getElementById('day').innerHTML= "Monday"; break;
+    case "tuesday": document.getElementById('day').innerHTML= "Tuesday"; break;
+    case "wednesday": document.getElementById('day').innerHTML= "Wednesday"; break;
+    case "thursdayday": document.getElementById('day').innerHTML= "Thursday"; break;
+    case "friday": document.getElementById('day').innerHTML= "Friday"; break;
+    case "saturday": document.getElementById('day').innerHTML= "Saturday"; break;
+    case "sunday": document.getElementById('day').innerHTML= "Sunday"; break;
+    default: document.getElementById('day').innerHTML= "Please enter valid choice!!";
 }
 
 console.log("Continue Statement")
