@@ -1,8 +1,10 @@
+
+
 function validateName() {
 
      inputText = document.getElementById('inputText').value;
 
-     alphabetPattern = /^[A-Za-z]+$/;
+     alphabetPattern = /^[A-Za-z ]+$/;
 
     if (alphabetPattern.test(inputText)) {
         document.getElementById('result1').innerHTML = 'Input is valid!';
@@ -39,5 +41,24 @@ function validateNumber() {
     } else {
       document.getElementById('result3').innerHTML = 'Please enter a valid email address.';
       
+    }
+  }
+
+  function Submit(){
+
+    inputText = document.getElementById('inputText').value;
+    alphabetPattern = /^[A-Za-z ]+$/;
+
+    inputNumber = document.getElementById('inputNumber').value;
+    numberPattern = /^[0-9]+$/;
+
+    inputEmail = document.getElementById('inputEmail').value;
+    emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(alphabetPattern.test(inputText) && numberPattern.test(inputNumber) && emailPattern.test(inputEmail)){
+      document.getElementById("submit").innerHTML="Valid Inputs!!"
+    }
+    else{
+      document.getElementById("submit").innerHTML= "Invalid input!!"
     }
   }
